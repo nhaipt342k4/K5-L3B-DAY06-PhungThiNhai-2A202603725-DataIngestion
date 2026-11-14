@@ -1,4 +1,5 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (cửa sổ ký tự trên text đã gộp khoảng trắng),500,50,"document_id, source, page, printed_page, page_type, week, day_start, day_end, title",không,intfloat/multilingual-e5-small (local; 384 chiều; query:/passage:),Baseline: cắt cố định dễ cắt ngang evidence và ý nên Hit@3 thấp hơn B.,3/15,7/15,2/5,4/5,"205 chunk; 95.817 ký tự; embed 8,3 s; chi phí 0. Coherence 1,0/2. test2: Hit@1 0/5, Hit@3 3/5."
+B,by_paragraph: tách theo heading của workbook rồi gom tới max_size,800,0,giống A,không,giống A,"Chunk theo cấu trúc giữ trọn mục (QUY TẮC, LỖI DỄ MẮC…) nên Evidence Hit@3 và coherence cao hơn A.",4/15,11/15,3/5,4/5,"139 chunk; 87.468 ký tự; embed 7,9 s; chi phí 0. Coherence 1,9/2. test2: 1/5, 2/5."
+C,giống B (dùng chung index B_para800),800,0,giống A,"có, chỉ khi câu hỏi có filter (page_type / week; $and khi nhiều trường)",giống A,Lọc metadata giúp câu hỏi có phạm vi tuần/loại trang lấy đúng phạm vi; câu không filter giống B.,4/15,12/15,3/5,4/5,"Được chọn theo tiêu chí chốt trước (Hit@3 dev → Hit@1 dev → ít chunk). Filter tuân thủ: dev 3/3, test 2/2. test2: 2/5, 2/5."
+D,"by_paragraph_ctx: như B + tiêu đề ngữ cảnh [Tuần|Ngày|Loại trang|Tên bài] ở đầu chunk + trang đáp án tách theo khối NGÀY, gắn day riêng",800,0,"giống A, day_start/day_end theo khối NGÀY ở trang đáp án",giống C,giống A,"Thiết kế SAU KHI xem lỗi test t04/t05 (post-hoc): tiêu đề giúp phân biệt tuần/ngày, tách khối NGÀY giúp tra đáp án.",7/15,12/15,3/5 (post-hoc),4/5 (post-hoc),"148 chunk; 93.223 ký tự; embed 8,9 s. Test gốc không độc lập với D. Tập test2 (5 câu, chốt trước khi code D): Hit@1 2/5, Hit@3 2/5 = C."

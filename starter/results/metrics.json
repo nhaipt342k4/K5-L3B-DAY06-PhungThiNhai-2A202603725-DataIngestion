@@ -1,0 +1,170 @@
+{
+  "dev": {
+    "run_at": "2026-11-14T10:21:02",
+    "model": "intfloat/multilingual-e5-small",
+    "top_k": 3,
+    "summary": {
+      "A": {
+        "dev": {
+          "N": 15,
+          "hit_at_1": 3,
+          "hit_at_3": 7,
+          "gold_page_in_top3": 14,
+          "filter_questions": 3,
+          "filter_compliant": 1
+        }
+      },
+      "B": {
+        "dev": {
+          "N": 15,
+          "hit_at_1": 4,
+          "hit_at_3": 11,
+          "gold_page_in_top3": 14,
+          "filter_questions": 3,
+          "filter_compliant": 1
+        }
+      },
+      "C": {
+        "dev": {
+          "N": 15,
+          "hit_at_1": 4,
+          "hit_at_3": 12,
+          "gold_page_in_top3": 14,
+          "filter_questions": 3,
+          "filter_compliant": 3
+        }
+      }
+    }
+  },
+  "test": {
+    "run_at": "2026-11-14T10:24:10",
+    "model": "intfloat/multilingual-e5-small",
+    "top_k": 3,
+    "summary": {
+      "A": {
+        "test": {
+          "N": 5,
+          "hit_at_1": 2,
+          "hit_at_3": 4,
+          "gold_page_in_top3": 4,
+          "filter_questions": 2,
+          "filter_compliant": 0
+        }
+      },
+      "B": {
+        "test": {
+          "N": 5,
+          "hit_at_1": 3,
+          "hit_at_3": 4,
+          "gold_page_in_top3": 4,
+          "filter_questions": 2,
+          "filter_compliant": 0
+        }
+      },
+      "C": {
+        "test": {
+          "N": 5,
+          "hit_at_1": 3,
+          "hit_at_3": 4,
+          "gold_page_in_top3": 5,
+          "filter_questions": 2,
+          "filter_compliant": 2
+        }
+      }
+    }
+  },
+  "dev__D": {
+    "run_at": "2026-11-14T10:46:55",
+    "model": "intfloat/multilingual-e5-small",
+    "top_k": 3,
+    "strategies": [
+      "D"
+    ],
+    "summary": {
+      "D": {
+        "dev": {
+          "N": 15,
+          "hit_at_1": 7,
+          "hit_at_3": 12,
+          "gold_page_in_top3": 14,
+          "filter_questions": 3,
+          "filter_compliant": 3
+        }
+      }
+    }
+  },
+  "test__D__posthoc": {
+    "run_at": "2026-11-14T10:47:21",
+    "model": "intfloat/multilingual-e5-small",
+    "top_k": 3,
+    "strategies": [
+      "D"
+    ],
+    "summary": {
+      "D": {
+        "test": {
+          "N": 5,
+          "hit_at_1": 3,
+          "hit_at_3": 4,
+          "gold_page_in_top3": 5,
+          "filter_questions": 2,
+          "filter_compliant": 2
+        }
+      }
+    },
+    "note": "Post-hoc: D was designed after inspecting these test errors; not an independent holdout."
+  },
+  "test2": {
+    "run_at": "2026-11-14T10:48:31",
+    "model": "intfloat/multilingual-e5-small",
+    "top_k": 3,
+    "strategies": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "summary": {
+      "A": {
+        "test2": {
+          "N": 5,
+          "hit_at_1": 0,
+          "hit_at_3": 3,
+          "gold_page_in_top3": 4,
+          "filter_questions": 2,
+          "filter_compliant": 0
+        }
+      },
+      "B": {
+        "test2": {
+          "N": 5,
+          "hit_at_1": 1,
+          "hit_at_3": 2,
+          "gold_page_in_top3": 4,
+          "filter_questions": 2,
+          "filter_compliant": 0
+        }
+      },
+      "C": {
+        "test2": {
+          "N": 5,
+          "hit_at_1": 2,
+          "hit_at_3": 2,
+          "gold_page_in_top3": 5,
+          "filter_questions": 2,
+          "filter_compliant": 2
+        }
+      },
+      "D": {
+        "test2": {
+          "N": 5,
+          "hit_at_1": 2,
+          "hit_at_3": 2,
+          "gold_page_in_top3": 5,
+          "filter_questions": 2,
+          "filter_compliant": 2
+        }
+      }
+    }
+  }
+}

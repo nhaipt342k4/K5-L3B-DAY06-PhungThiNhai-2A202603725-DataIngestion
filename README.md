@@ -1,3 +1,55 @@
+# Bài làm Day 06: Phùng Thị Nhài (2A202603725, L3B)
+
+Corpus: Datio English, *Xây nền ngữ pháp trong 30 ngày* (40 trang nội dung). Embedding: `intfloat/multilingual-e5-small` (chạy local). Vector store: Chroma (cosine). Báo cáo: [report/individual/2A202603725_PhungThiNhai.md](report/individual/2A202603725_PhungThiNhai.md).
+
+## Cài đặt (Windows PowerShell; macOS/Linux dùng lệnh tương đương)
+
+Yêu cầu: Python 3.12 (đã thử 3.12.10). Không cần Docker, không cần API key.
+
+```powershell
+cd starter
+python -m venv .venv
+.venv\Scripts\Activate.ps1          # nếu bị chặn: Set-ExecutionPolicy -Scope Process Bypass
+pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+$env:PYTHONUTF8 = "1"
+```
+
+**Dữ liệu:** PDF không được commit vì tài liệu không ghi giấy phép tái phân phối. Tải `Datio_English_Grammar_Foundation_30_Days.pdf` từ thư viện tự học tại ieltsdatio.edu.vn và đặt vào `starter/data/`. Chi tiết nguồn, quy tắc đếm trang và 7 trang bị loại xem [data/manifest.json](data/manifest.json). Lần chạy đầu sẽ tự tải model (~470 MB).
+
+## Chạy lại toàn bộ (từ `starter/`)
+
+```powershell
+python -m scripts.prepare_data                         # manifest + kiểm tra evidence (25 câu)
+python -m src.run index                                # chunk A/B/D, embed, lưu Chroma, kiểm tra nạp lại
+python -m src.run evaluate --split dev                 # A, B, C, D trên 15 câu dev
+python -m src.run select                               # áp tiêu chí đã chốt cho A/B/C
+python -m src.run evaluate --split test                # test gốc (5 câu)
+python -m src.run evaluate --split test2               # test mới cho phần cải tiến D
+python -m src.run evaluate --split test --strategies D # D trên test gốc, lưu riêng nhãn __posthoc
+python -m src.run audit                                # không ghi đè file CSV đã có nhãn
+```
+
+Lưu ý: `evaluate --split dev` khi không có `--strategies` sẽ chạy cả D. Kết quả D ở lần chạy gốc nằm dưới tag `dev__D`.
+
+## Bản đồ file
+
+| Nội dung | Đường dẫn |
+|---|---|
+| Code pipeline | [starter/src/](starter/src/) (`ingestion`, `chunking`, `embeddings`, `store`, `evaluation`, `run`) |
+| Manifest dữ liệu | [data/manifest.json](data/manifest.json) |
+| Benchmark (15 dev / 5 test) và test2 (5 câu) | [benchmark/](benchmark/) |
+| Tiêu chí chọn và kết quả chọn | [starter/results/selection.json](starter/results/selection.json) |
+| Thống kê index | [starter/results/index_stats.json](starter/results/index_stats.json) |
+| Chỉ số Hit@1 / Hit@3 | [starter/results/metrics.json](starter/results/metrics.json) |
+| Trace top-3 đầy đủ | `starter/results/traces_*.jsonl` |
+| Nhãn chấm tay và tổng hợp | `starter/results/audit_*.csv`, [audit_summary.json](starter/results/audit_summary.json) |
+| Kiểm tra evidence | [starter/results/evidence_verification.json](starter/results/evidence_verification.json) |
+| Experiment log | [artifacts/experiment_log.csv](artifacts/experiment_log.csv) |
+| Tiến độ và quyết định | [PROGRESS.md](PROGRESS.md) |
+
+---
+
 # Day 06 · Data Ingestion Engineering
 
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**

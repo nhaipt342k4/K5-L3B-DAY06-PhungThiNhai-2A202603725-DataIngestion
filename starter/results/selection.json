@@ -1,0 +1,38 @@
+{
+  "criterion": "1) Evidence Hit@3 trên dev cao nhất; 2) nếu bằng: Hit@1 trên dev cao nhất; 3) nếu vẫn bằng: ít chunk hơn.",
+  "criterion_fixed_at": "2026-11-14",
+  "criterion_note": "Học viên chốt tiêu chí trước khi chạy dev và trước khi xem test.",
+  "chosen_strategy": "C",
+  "ranking": [
+    "C",
+    "B",
+    "A"
+  ],
+  "dev_scores": {
+    "A": {
+      "N": 15,
+      "hit_at_1": 3,
+      "hit_at_3": 7,
+      "gold_page_in_top3": 14,
+      "filter_questions": 3,
+      "filter_compliant": 1
+    },
+    "B": {
+      "N": 15,
+      "hit_at_1": 4,
+      "hit_at_3": 11,
+      "gold_page_in_top3": 14,
+      "filter_questions": 3,
+      "filter_compliant": 1
+    },
+    "C": {
+      "N": 15,
+      "hit_at_1": 4,
+      "hit_at_3": 12,
+      "gold_page_in_top3": 14,
+      "filter_questions": 3,
+      "filter_compliant": 3
+    }
+  },
+  "selected_at": "2026-11-14T10:21:15"
+}

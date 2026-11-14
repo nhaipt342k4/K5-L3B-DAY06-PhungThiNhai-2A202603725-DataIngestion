@@ -1,0 +1,461 @@
+{
+  "source_id": "datio-grammar-30d",
+  "title": "Xây nền ngữ pháp trong 30 ngày (30-Day Grammar Foundation Workbook)",
+  "publisher": "Datio English",
+  "source_path_or_url": "https://ieltsdatio.edu.vn (tài liệu tự học miễn phí); bản local: starter/data/Datio_English_Grammar_Foundation_30_Days.pdf",
+  "how_to_obtain": "Tải file 'Datio_English_Grammar_Foundation_30_Days.pdf' từ ieltsdatio.edu.vn, đặt vào starter/data/.",
+  "license_or_permission": "Tài liệu tự học phát miễn phí của Datio English; không ghi giấy phép tái phân phối. Chỉ dùng cho bài tập học thuật, xử lý local (không gửi API), KHÔNG commit PDF vào repo.",
+  "accessed_at": "2026-11-14 (theo thời điểm tạo file trong thư mục Downloads)",
+  "manifest_generated_at": "2026-11-14",
+  "physical_pages": 47,
+  "page_counting_rule": "Đếm trang PDF vật lý có nội dung ngữ pháp/bài tập/đáp án. Loại bìa, quảng cáo, trang hướng dẫn cách học và bản đồ 30 ngày (tương đương mục lục). Số trang in ở chân trang = trang PDF - 1.",
+  "counted_pages": 40,
+  "excluded_pages": [
+    {
+      "page": 1,
+      "reason": "bìa"
+    },
+    {
+      "page": 2,
+      "reason": "quảng cáo placement test"
+    },
+    {
+      "page": 3,
+      "reason": "hướng dẫn cách học (front matter)"
+    },
+    {
+      "page": 4,
+      "reason": "bản đồ 30 ngày (tương đương mục lục)"
+    },
+    {
+      "page": 45,
+      "reason": "quảng cáo placement test (lặp trang 2)"
+    },
+    {
+      "page": 46,
+      "reason": "quảng cáo TestLab"
+    },
+    {
+      "page": 47,
+      "reason": "quảng cáo khóa học / liên hệ"
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "datio-grammar-30d:p05",
+      "page": 5,
+      "char_count": 2498,
+      "page_type": "lesson",
+      "day_start": 1,
+      "day_end": 1,
+      "week": 1,
+      "title": "CÂU TIẾNG ANH CẦN GÌ?",
+      "printed_page": 4
+    },
+    {
+      "page_id": "datio-grammar-30d:p06",
+      "page": 6,
+      "char_count": 2054,
+      "page_type": "lesson",
+      "day_start": 2,
+      "day_end": 2,
+      "week": 1,
+      "title": "ĐẠI TỪ NHÂN XƯNG VÀ TO BE",
+      "printed_page": 5
+    },
+    {
+      "page_id": "datio-grammar-30d:p07",
+      "page": 7,
+      "char_count": 2150,
+      "page_type": "lesson",
+      "day_start": 3,
+      "day_end": 3,
+      "week": 1,
+      "title": "PHỦ ĐỊNH VÀ CÂU HỎI VỚI TO BE",
+      "printed_page": 6
+    },
+    {
+      "page_id": "datio-grammar-30d:p08",
+      "page": 8,
+      "char_count": 2106,
+      "page_type": "lesson",
+      "day_start": 4,
+      "day_end": 4,
+      "week": 1,
+      "title": "A, AN VÀ DANH TỪ SỐ NHIỀU",
+      "printed_page": 7
+    },
+    {
+      "page_id": "datio-grammar-30d:p09",
+      "page": 9,
+      "char_count": 2094,
+      "page_type": "lesson",
+      "day_start": 5,
+      "day_end": 5,
+      "week": 1,
+      "title": "SỞ HỮU",
+      "printed_page": 8
+    },
+    {
+      "page_id": "datio-grammar-30d:p10",
+      "page": 10,
+      "char_count": 2153,
+      "page_type": "lesson",
+      "day_start": 6,
+      "day_end": 6,
+      "week": 1,
+      "title": "THERE IS/ARE VÀ VỊ TRÍ",
+      "printed_page": 9
+    },
+    {
+      "page_id": "datio-grammar-30d:p11",
+      "page": 11,
+      "char_count": 1875,
+      "day_start": 7,
+      "day_end": 7,
+      "page_type": "review",
+      "week": 1,
+      "printed_page": 10
+    },
+    {
+      "page_id": "datio-grammar-30d:p12",
+      "page": 12,
+      "char_count": 1305,
+      "day_start": 7,
+      "day_end": 7,
+      "page_type": "mini_test",
+      "week": 1,
+      "printed_page": 11
+    },
+    {
+      "page_id": "datio-grammar-30d:p13",
+      "page": 13,
+      "char_count": 2191,
+      "page_type": "lesson",
+      "day_start": 8,
+      "day_end": 8,
+      "week": 2,
+      "title": "HIỆN TẠI ĐƠN",
+      "printed_page": 12
+    },
+    {
+      "page_id": "datio-grammar-30d:p14",
+      "page": 14,
+      "char_count": 2136,
+      "page_type": "lesson",
+      "day_start": 9,
+      "day_end": 9,
+      "week": 2,
+      "title": "THÊM S/ES VÀO ĐỘNG TỪ",
+      "printed_page": 13
+    },
+    {
+      "page_id": "datio-grammar-30d:p15",
+      "page": 15,
+      "char_count": 2237,
+      "page_type": "lesson",
+      "day_start": 10,
+      "day_end": 10,
+      "week": 2,
+      "title": "DO/DOES TRONG PHỦ ĐỊNH VÀ CÂU HỎI",
+      "printed_page": 14
+    },
+    {
+      "page_id": "datio-grammar-30d:p16",
+      "page": 16,
+      "char_count": 2300,
+      "page_type": "lesson",
+      "day_start": 11,
+      "day_end": 11,
+      "week": 2,
+      "title": "TRẠNG TỪ CHỈ TẦN SUẤT",
+      "printed_page": 15
+    },
+    {
+      "page_id": "datio-grammar-30d:p17",
+      "page": 17,
+      "char_count": 2193,
+      "page_type": "lesson",
+      "day_start": 12,
+      "day_end": 12,
+      "week": 2,
+      "title": "HIỆN TẠI TIẾP DIỄN",
+      "printed_page": 16
+    },
+    {
+      "page_id": "datio-grammar-30d:p18",
+      "page": 18,
+      "char_count": 2494,
+      "page_type": "lesson",
+      "day_start": 13,
+      "day_end": 13,
+      "week": 2,
+      "title": "HIỆN TẠI ĐƠN HAY TIẾP DIỄN?",
+      "printed_page": 17
+    },
+    {
+      "page_id": "datio-grammar-30d:p19",
+      "page": 19,
+      "char_count": 1889,
+      "day_start": 14,
+      "day_end": 14,
+      "page_type": "review",
+      "week": 2,
+      "printed_page": 18
+    },
+    {
+      "page_id": "datio-grammar-30d:p20",
+      "page": 20,
+      "char_count": 1366,
+      "day_start": 14,
+      "day_end": 14,
+      "page_type": "mini_test",
+      "week": 2,
+      "printed_page": 19
+    },
+    {
+      "page_id": "datio-grammar-30d:p21",
+      "page": 21,
+      "char_count": 2065,
+      "page_type": "lesson",
+      "day_start": 15,
+      "day_end": 15,
+      "week": 3,
+      "title": "WAS/WERE",
+      "printed_page": 20
+    },
+    {
+      "page_id": "datio-grammar-30d:p22",
+      "page": 22,
+      "char_count": 2095,
+      "page_type": "lesson",
+      "day_start": 16,
+      "day_end": 16,
+      "week": 3,
+      "title": "QUÁ KHỨ ĐƠN CÓ QUY TẮC",
+      "printed_page": 21
+    },
+    {
+      "page_id": "datio-grammar-30d:p23",
+      "page": 23,
+      "char_count": 2154,
+      "page_type": "lesson",
+      "day_start": 17,
+      "day_end": 17,
+      "week": 3,
+      "title": "ĐỘNG TỪ BẤT QUY TẮC",
+      "printed_page": 22
+    },
+    {
+      "page_id": "datio-grammar-30d:p24",
+      "page": 24,
+      "char_count": 2226,
+      "page_type": "lesson",
+      "day_start": 18,
+      "day_end": 18,
+      "week": 3,
+      "title": "DID TRONG PHỦ ĐỊNH VÀ CÂU HỎI",
+      "printed_page": 23
+    },
+    {
+      "page_id": "datio-grammar-30d:p25",
+      "page": 25,
+      "char_count": 2179,
+      "page_type": "lesson",
+      "day_start": 19,
+      "day_end": 19,
+      "week": 3,
+      "title": "WILL",
+      "printed_page": 24
+    },
+    {
+      "page_id": "datio-grammar-30d:p26",
+      "page": 26,
+      "char_count": 2224,
+      "page_type": "lesson",
+      "day_start": 20,
+      "day_end": 20,
+      "week": 3,
+      "title": "BE GOING TO",
+      "printed_page": 25
+    },
+    {
+      "page_id": "datio-grammar-30d:p27",
+      "page": 27,
+      "char_count": 1858,
+      "day_start": 21,
+      "day_end": 21,
+      "page_type": "review",
+      "week": 3,
+      "printed_page": 26
+    },
+    {
+      "page_id": "datio-grammar-30d:p28",
+      "page": 28,
+      "char_count": 1391,
+      "day_start": 21,
+      "day_end": 21,
+      "page_type": "mini_test",
+      "week": 3,
+      "printed_page": 27
+    },
+    {
+      "page_id": "datio-grammar-30d:p29",
+      "page": 29,
+      "char_count": 2247,
+      "page_type": "lesson",
+      "day_start": 22,
+      "day_end": 22,
+      "week": 4,
+      "title": "DANH TỪ ĐẾM ĐƯỢC VÀ KHÔNG ĐẾM ĐƯỢC",
+      "printed_page": 28
+    },
+    {
+      "page_id": "datio-grammar-30d:p30",
+      "page": 30,
+      "char_count": 2190,
+      "page_type": "lesson",
+      "day_start": 23,
+      "day_end": 23,
+      "week": 4,
+      "title": "TỪ CHỈ SỐ LƯỢNG",
+      "printed_page": 29
+    },
+    {
+      "page_id": "datio-grammar-30d:p31",
+      "page": 31,
+      "char_count": 2275,
+      "page_type": "lesson",
+      "day_start": 24,
+      "day_end": 24,
+      "week": 4,
+      "title": "TÍNH TỪ VÀ TRẠNG TỪ",
+      "printed_page": 30
+    },
+    {
+      "page_id": "datio-grammar-30d:p32",
+      "page": 32,
+      "char_count": 2292,
+      "page_type": "lesson",
+      "day_start": 25,
+      "day_end": 25,
+      "week": 4,
+      "title": "SO SÁNH HƠN VÀ SO SÁNH NHẤT",
+      "printed_page": 31
+    },
+    {
+      "page_id": "datio-grammar-30d:p33",
+      "page": 33,
+      "char_count": 2292,
+      "page_type": "lesson",
+      "day_start": 26,
+      "day_end": 26,
+      "week": 4,
+      "title": "CAN, SHOULD VÀ MUST",
+      "printed_page": 32
+    },
+    {
+      "page_id": "datio-grammar-30d:p34",
+      "page": 34,
+      "char_count": 2357,
+      "page_type": "lesson",
+      "day_start": 27,
+      "day_end": 27,
+      "week": 4,
+      "title": "AND, BUT, BECAUSE VÀ SO",
+      "printed_page": 33
+    },
+    {
+      "page_id": "datio-grammar-30d:p35",
+      "page": 35,
+      "char_count": 1934,
+      "day_start": 28,
+      "day_end": 28,
+      "page_type": "review",
+      "week": 4,
+      "printed_page": 34
+    },
+    {
+      "page_id": "datio-grammar-30d:p36",
+      "page": 36,
+      "char_count": 1493,
+      "day_start": 28,
+      "day_end": 28,
+      "page_type": "mini_test",
+      "week": 4,
+      "printed_page": 35
+    },
+    {
+      "page_id": "datio-grammar-30d:p37",
+      "page": 37,
+      "char_count": 1125,
+      "day_start": 29,
+      "day_end": 29,
+      "page_type": "error_clinic",
+      "printed_page": 36
+    },
+    {
+      "page_id": "datio-grammar-30d:p38",
+      "page": 38,
+      "char_count": 1773,
+      "day_start": 30,
+      "day_end": 30,
+      "page_type": "final_test",
+      "printed_page": 37
+    },
+    {
+      "page_id": "datio-grammar-30d:p39",
+      "page": 39,
+      "char_count": 3232,
+      "page_type": "answer_key",
+      "day_start": 1,
+      "day_end": 6,
+      "printed_page": 38
+    },
+    {
+      "page_id": "datio-grammar-30d:p40",
+      "page": 40,
+      "char_count": 4095,
+      "page_type": "answer_key",
+      "day_start": 7,
+      "day_end": 13,
+      "printed_page": 39
+    },
+    {
+      "page_id": "datio-grammar-30d:p41",
+      "page": 41,
+      "char_count": 3982,
+      "page_type": "answer_key",
+      "day_start": 14,
+      "day_end": 20,
+      "printed_page": 40
+    },
+    {
+      "page_id": "datio-grammar-30d:p42",
+      "page": 42,
+      "char_count": 4036,
+      "page_type": "answer_key",
+      "day_start": 21,
+      "day_end": 27,
+      "printed_page": 41
+    },
+    {
+      "page_id": "datio-grammar-30d:p43",
+      "page": 43,
+      "char_count": 1686,
+      "page_type": "answer_key",
+      "day_start": 28,
+      "day_end": 30,
+      "printed_page": 42
+    },
+    {
+      "page_id": "datio-grammar-30d:p44",
+      "page": 44,
+      "char_count": 1325,
+      "page_type": "appendix",
+      "printed_page": 43
+    }
+  ],
+  "total_chars": 87567,
+  "ingestion_log": []
+}
